@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ing. František Čapek, Ph.D. - odborník na lesní hospodářství, ochranu přírody a vzdělávání. Znalecká činnost, lesní pedagogika a školení práce s pilou.">
+    <meta name="keywords" content="lesní hospodářství, znalecká činnost, lesní pedagogika, poradenství, Oslov">
+    <meta name="author" content="Ing. František Čapek, Ph.D.">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <link rel="canonical" href="https://www.example.com/">
+    <link rel="icon" type="image/png" href="icon tree.png">
+    <!-- Open Graph tagy pro sociální sítě -->
+    <meta property="og:title" content="Ing. František Čapek, Ph.D. | Lesní hospodářství a vzdělávání">
+    <meta property="og:description" content="Odborník na lesní hospodářství, ochranu přírody a vzdělávání. Znalecká činnost, lesní pedagogika a školení.">
+    <meta property="og:type" content="business.business">
+    <meta property="og:url" content="https://www.example.com/">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1542202229-7d93c33f5d07?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:image:alt" content="Lesní hospodářství">
+    
+    <!-- Twitter Card tagy -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ing. František Čapek, Ph.D. | Lesní hospodářství a vzdělávání">
+    <meta name="twitter:description" content="Odborný poradce na lesní hospodářství, ochranu přírody a vzdělávání.">
+    
+    <title>Ing. František Čapek, Ph.D. | Lesní hospodářství a vzdělávání</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- JSON-LD strukturovaná data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Ing. František Čapek, Ph.D.",
+        "description": "Odborník na lesní hospodářství, ochranu přírody a vzdělávání",
+        "url": "https://www.example.com/",
+        "telephone": "+420777748848",
+        "email": "frant.capek@seznam.cz",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Oslov 97",
+            "addressLocality": "Oslov",
+            "postalCode": "398 35",
+            "addressCountry": "CZ"
+        },
+        "image": "https://images.unsplash.com/photo-1542202229-7d93c33f5d07?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "areaServed": "CZ",
+        "priceRange": "$$",
+        "sameAs": [],
+        "taxID": "CZ7707311271"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Ing. František Čapek, Ph.D.",
+        "url": "https://www.example.com/",
+        "telephone": "+420777748848",
+        "email": "frant.capek@seznam.cz",
+        "jobTitle": "Odborný konzultant lesního hospodářství",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Oslov 97",
+            "addressLocality": "Oslov",
+            "postalCode": "398 35",
+            "addressCountry": "CZ"
+        }
+    }
+    </script>
+
+    <style>
+        /* --- DEFINICE BAREV A PROMĚNNÝCH --- */
+        :root {
+            --primary-green: #1A4D2E;      
+            --accent-green: #4F772D;       
+            --bg-light: #F7F8F5;           
+            --bg-white: #FFFFFF;
+            --text-dark: #2C2C2C;          
+            --text-muted: #555555;
+            
+            --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 10px 20px -5px rgba(0, 0, 0, 0.1);
+            --radius-lg: 16px;
+        }
+
+        /* --- ZÁKLADNÍ STYLY --- */
+        html { scroll-behavior: smooth; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            color: var(--primary-green);
+            font-weight: 700;
+        }
+        
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+
+        /* --- NAVIGACE --- */
+        header {
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(8px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 1rem 0;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.2rem; color: var(--primary-green); margin: 0; }
+        .logo a { color: var(--primary-green); }
+        nav ul { display: flex; gap: 2rem; }
+        nav a:hover { color: var(--accent-green); }
+
+        /* --- HERO --- */
+        .hero {
+            background: linear-gradient(rgba(26, 77, 46, 0.75), rgba(26, 77, 46, 0.55)), 
+                        url('https://images.unsplash.com/photo-1542202229-7d93c33f5d07?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 8rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 60vh;
+            border-bottom-left-radius: var(--radius-lg);
+            border-bottom-right-radius: var(--radius-lg);
+            background-attachment: fixed;
+        }
+
+        .hero h1 { font-size: 2.5rem; max-width: 900px; color: white; margin-bottom: 1.5rem; }
+        .hero p { font-size: 1.2rem; max-width: 800px; margin-bottom: 3rem; opacity: 0.9; }
+        .slogan { font-family:'Playfair Display', serif;
+           background: rgba(255,255,255,0.1); 
+           backdrop-filter: blur(1px);
+           -webkit-backdrop-filter: blur(1px);
+           padding: 0.8rem 1.5rem; 
+           border-radius: 50px;
+           border: 1px solid rgba(255,255,255,0.2);
+           box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        }
+
+        /* --- SLUŽBY --- */
+        .section-container { max-width: 1200px; margin: 0 auto; padding: 5rem 1.5rem; }
+        .section-title { text-align: center; font-size: 2.2rem; margin-bottom: 3rem; color: var(--primary-green); }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            align-items: start;
+        }
+
+        .service-card {
+            background: var(--bg-white);
+            padding: 1.5rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid rgba(0,0,0,0.03);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            transition: transform 0.3s ease;
+            /* Nastavíme min-height, aby karty vedle sebe tolik neskákaly, když se obsah mění */
+            min-height: 520px; 
+        }
+
+        .service-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-md); }
+        .service-card h3 { font-size: 1.5rem; padding-bottom: 1rem; border-bottom: 1px solid #eee; margin-bottom: 1.5rem; }
+
+        /* --- NOVÉ STYLY PRO ZÁLOŽKY (TABS) --- */
+        
+        .tabs-nav {
+            display: flex;
+            gap: 0.25rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap; /* Na mobilu se zalomí pod sebe */
+        }
+
+        .tab-btn {
+            background: transparent;
+            border: 1px solid var(--accent-green);
+            color: var(--accent-green);
+            padding: 0.5rem 0.25rem;
+            border-radius: 12px;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 400;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            flex-grow: 1; /* Tlačítka se roztáhnou na celou šířku */
+            text-align: center;
+        }
+
+        .tab-btn:hover {
+            background-color: rgba(79, 119, 45, 0.1);
+        }
+
+        .tab-btn.active {
+            background-color: var(--primary-green);
+            border-color: var(--primary-green);
+            color: white;
+        }
+
+        .tab-content {
+            display: none; /* Defaultně skryté */
+            animation: fadeIn 0.4s ease;
+        }
+
+        .tab-content.active {
+            display: block; /* Zobrazí se jen aktivní */
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(5px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Styl seznamů */
+        .service-list li { margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative; color: var(--text-muted); font-size: 0.95rem; }
+        .service-list li::before { content: ''; position: absolute; left: 0; top: 10px; width: 6px; height: 6px; border-radius: 50%; background-color: var(--accent-green); }
+
+        /* --- O MNĚ + KONTAKT (SPLIT) --- */
+        .split-section-wrapper { background: var(--bg-white); padding: 3rem 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); }
+        .split-grid { display: grid; grid-template-columns: 1fr; gap: 3rem; }
+        
+        .contact-link { display: block; margin-top: 0.5rem; font-weight: 600; color: var(--primary-green); }
+        footer { background: var(--primary-green); color: rgba(255,255,255,0.8); text-align: center; padding: 3rem; margin-top: 3rem; }
+
+        /* --- RESPONZIVITA --- */
+        @media (min-width: 768px) {
+            .hero h1 { font-size: 3.5rem; }
+            .services-grid { grid-template-columns: repeat(3, 1fr); }
+            
+            /* Na tabletu a PC nemusí být min-height tak velký, protože se obsah rozloží do šířky */
+            .service-card { min-height: 480px; }
+        }
+
+        @media (min-width: 992px) {
+            .split-section-wrapper { padding: 5rem; }
+            .split-grid { grid-template-columns: 1fr 1fr; gap: 6rem; }
+            .split-grid > div:first-child { border-right: 1px solid rgba(0,0,0,0.1); padding-right: 3rem; }
+        }
+        
+        @media (max-width: 767px) {
+            .nav-container { flex-direction: column; gap: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <h1 class="logo"><a href="#hero">Ing. František Čapek, Ph.D.</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#sluzby">Služby</a></li>
+                    <li><a href="#o-mne">O mně & Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="hero">
+        <h1>Odborník na lesní hospodářství, ochranu přírody a vzdělávání</h1>
+        <p>Spojuji dlouholeté zkušenosti z praxe s odborným vzděláním. Poskytuji kvalitní poradenství, vzdělávání i posudky.</p>
+        <div class="slogan">„Les, příroda, vzdělávání – odborně a s respektem.“</div>
+    </section>
+
+    <section id="sluzby" class="section-container">
+        <h2 class="section-title">Co nabízím</h2>
+        <div class="services-grid">
+            
+            <div class="service-card">
+                <h3>1. Znalecká činnost</h3>
+                <p style="margin-bottom: 1.5rem; color: var(--text-muted); font-size: 0.95rem;">
+                    Provádím znalecké posudky a odborné studie v oborech dle vyhlášky č. 36/1967 Sb. Vyberte oblast:
+                </p>
+
+                <div class="tabs-nav">
+                    <button class="tab-btn active" onclick="openTab(event, 'tab-eko')">Ekonomika</button>
+                    <button class="tab-btn" onclick="openTab(event, 'tab-les')">Lesnictví</button>
+                    <button class="tab-btn" onclick="openTab(event, 'tab-ochrana')">Ochrana</button>
+                </div>
+
+                <div id="tab-eko" class="tab-content active">
+                    <ul class="service-list">
+                        <li>Ceny a odhady</li>
+                        <li>Oceňování trofejí zvěře a chovné hodnoty zvěře</li>
+                        <li>Škody způsobené zvěří a na zvěři</li>
+                        <li>Oceňování pozemků a porostů (lesních i ostatní zeleně)</li>
+                    </ul>
+                </div>
+
+                <div id="tab-les" class="tab-content">
+                    <ul class="service-list">
+                        <li>Dříví – těžba a sortimentace</li>
+                        <li>Myslivost a chov zvěře</li>
+                        <li>Plánování v lesním hospodářství</li>
+                        <li>Poradenství v lesním hospodářství</li>
+                    </ul>
+                </div>
+
+                <div id="tab-ochrana" class="tab-content">
+                    <ul class="service-list">
+                        <li>Hodnocení statického a zdravotního stavu dřevin</li>
+                        <li>Dendrologické průzkumy</li>
+                        <li>Návrhy pěstebních opatření</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="service-card">
+                <h3>2. Lesní pedagogika</h3>
+                <p>Programy pro mateřské a základní školy zaměřené na zážitek a poznání.</p>
+                <br>
+                <ul class="service-list">
+                    <li>Interaktivní výuka o lese, přírodě a myslivosti</li>
+                    <li>Praktické ukázky a hry v přírodě</li>
+                    <li>Vzdělávání formou zážitku</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <h3>3. Školení práce s pilou</h3>
+                <p>Profesionální školení práce s motorovou pilou a křovinořezem.</p>
+                <br>
+                <ul class="service-list">
+                    <li>Bezpečnost práce a správné postupy</li>
+                    <li>Praktické ukázky a nácvik</li>
+                    <li>Možnost získání certifikace</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="section-container">
+        <div class="split-section-wrapper" id="o-mne">
+            <div class="split-grid">
+                <div class="about-content">
+                    <h2>O mně</h2>
+                    <p><strong>Jsem Ing. František Čapek, Ph.D.</strong></p>
+                    <p style="margin-top: 1rem; color: var(--text-muted);">
+                        Odborník na lesní hospodářství, ochranu přírody a vzdělávání. Mám dlouholeté zkušenosti z praxe i akademického prostředí. Spojuji hluboké znalosti z oblasti ekonomiky a lesnictví s moderními metodami vzdělávání.
+                    </p>
+                </div>
+
+                <div class="contact-content" id="kontakt">
+                    <h2>Kontakt</h2>
+                    <div style="margin-bottom: 1.5rem;">
+                        <h4 style="font-family: 'Inter'; font-size: 0.9rem; text-transform: uppercase; margin-bottom: 0.5rem; color: var(--accent-green);">Fakturační údaje</h4>
+                        <p style="color: var(--text-muted);">Ing. František Čapek, Ph.D.<br>Oslov 97, 398 35 Oslov</p>
+                        <p style="font-size: 0.85rem; color: #999; margin-top: 0.2rem;">IČ: 07557248 | DIČ: CZ7707311271</p>
+                    </div>
+                    <div>
+                        <h4 style="font-family: 'Inter'; font-size: 0.9rem; text-transform: uppercase; margin-bottom: 0.5rem; color: var(--accent-green);">Spojení</h4>
+                        <a href="tel:+420777748848" class="contact-link">📞 +420 777 748 848</a>
+                        <a href="mailto:frant.capek@seznam.cz" class="contact-link">📧 frant.capek@seznam.cz</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Ing. František Čapek, Ph.D.</p>
+    </footer>
+
+    <script>
+        function openTab(evt, tabName) {
+            // 1. Skryjeme veškerý obsah záložek
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].classList.remove("active");
+                tabcontent[i].style.display = "none";
+            }
+
+            // 2. Odebereme třídu "active" ze všech tlačítek
+            tablinks = document.getElementsByClassName("tab-btn");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active");
+            }
+
+            // 3. Zobrazíme aktuální záložku a přidáme "active" na kliknuté tlačítko
+            document.getElementById(tabName).style.display = "block";
+            // Krátké zpoždění pro animaci opacity
+            setTimeout(() => {
+                document.getElementById(tabName).classList.add("active");
+            }, 10);
+            
+            evt.currentTarget.classList.add("active");
+        }
+    </script>
+</body>
+</html>
